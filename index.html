@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medi-Friend 💊</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-50 min-h-screen flex flex-col items-center p-4">
+
+  <header class="text-center my-4">
+    <h1 class="text-3xl font-bold text-blue-700">💊 Medi-Friend</h1>
+    <p class="text-gray-600">Your Smart Pill Reminder</p>
+  </header>
+
+  <!-- Reminder Input -->
+  <section class="bg-white shadow-lg rounded-2xl p-4 w-full max-w-md">
+    <h2 class="text-xl font-semibold mb-3">Add a Reminder</h2>
+    <form id="reminderForm" class="flex flex-col gap-2">
+      <input id="medName" type="text" placeholder="Medicine Name" class="p-2 border rounded" required>
+      <input id="dosage" type="text" placeholder="Dosage (e.g., 1 tablet)" class="p-2 border rounded" required>
+      <input id="time" type="time" class="p-2 border rounded" required>
+      <button type="submit" class="bg-blue-600 text-white rounded p-2 hover:bg-blue-700 transition">Add Reminder</button>
+    </form>
+  </section>
+
+  <!-- Reminder List -->
+  <section class="mt-6 w-full max-w-md">
+    <h2 class="text-xl font-semibold mb-3 text-blue-700">Your Reminders</h2>
+    <div id="reminderList" class="flex flex-col gap-3"></div>
+  </section>
+
+  <footer class="mt-auto text-sm text-gray-500 text-center pt-6">
+    © 2025 Medi-Friend | Built at Hackathon 💡
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
